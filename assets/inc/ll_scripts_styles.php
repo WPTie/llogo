@@ -16,7 +16,11 @@ function ll_scripts_stlyes() {
 
     	// jQuery
         wp_enqueue_script( 'jquery' ); // Enqueue it!
-
+        wp_deregister_script( 'jquery' );
+        
+        wp_register_script( 'll_jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js' ); // Custom scripts
+        wp_enqueue_script( 'll_jquery' ); // Enqueue it!
+        
         /**
          * Scripts
          *
