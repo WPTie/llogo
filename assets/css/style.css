@@ -1,6 +1,6 @@
 /* Preloader */
 
-#preloader {
+#aa_preloader {
 	display: table;
 	width: 100%;
 	height: 100%;
@@ -12,14 +12,14 @@
     background-color: #fff; /* change if the mask should have another color then white */
     z-index: 99; /* makes sure it stays on top */
 }
-#cell {
+#aa_cell {
     display: table-cell;
     width: 100%;
     height: 100%;
     vertical-align: middle;
     text-align: center;
 }
-.position {
+.aa_position {
 	display: inline-block;
     position: relative;
     max-width: 100%;

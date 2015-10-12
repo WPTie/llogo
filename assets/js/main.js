@@ -18,12 +18,11 @@ jQuery(function($) {
 		var aa_timer = 0;
 		while( aa_timer < 100 ) {
 			setTimeout(function($) {
-				jQuery('#logo').loadgo('setprogress', aa_timer);
+				jQuery('#aa_logo').loadgo('setprogress', aa_timer);
 			}, 600);
 			aa_timer++;
 		}
-		// jQuery('#logo').loadgo('setprogress', 100);
-		jQuery('#preloader').delay(700).fadeOut('slow'); // will fade out the white DIV that covers the website.
+		jQuery('#aa_preloader').delay(700).fadeOut('slow'); // will fade out the white DIV that covers the website.
 		jQuery('body').delay(700).css({'overflow':'hidden'});
 	});
 });

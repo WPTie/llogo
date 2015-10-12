@@ -74,7 +74,7 @@ function ll_html_initialize() {
 
         <script>
             jQuery(function($) {
-                $("body").prepend("<!-- Preloader --><div id='preloader'><div id='cell'><div class='position'><img id='logo' src=' <?php echo $ll_logo__src ?> ' alt='Logo' /></div></div></div><!-- / Preloader -->");
+                $("body").prepend("<!-- Preloader --><div id='aa_preloader'><div id='aa_cell'><div class='aa_position'><img id='aa_logo' src=' <?php echo $ll_logo__src ?> ' alt='Logo' /></div></div></div><!-- / Preloader -->");
             });
         </script>
 
@@ -82,7 +82,7 @@ function ll_html_initialize() {
     else { ?>
         <script>
             jQuery(function($) {
-                $("body").prepend("<!-- Preloader --><div id='preloader'><div id='cell'><div class='position'><img id='logo' src=' <?php echo $ll_logo__src[0] ?> ' alt='Logo' /></div></div></div><!-- / Preloader -->");
+                $("body").prepend("<!-- Preloader --><div id='aa_preloader'><div id='aa_cell'><div class='aa_position'><img id='aa_logo' src=' <?php echo $ll_logo__src[0] ?> ' alt='Logo' /></div></div></div><!-- / Preloader -->");
             });
         </script>
 <?php }

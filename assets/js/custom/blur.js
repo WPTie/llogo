@@ -6,8 +6,8 @@
  */
 
 jQuery(function($) {
-	jQuery('#logo').loadgo();
-	jQuery('#logo').load(function() {
+	jQuery('#aa_logo').loadgo();
+	jQuery('#aa_logo').load(function() {
 		jQuery(this).loadgo({
 			'filter':    'blur'
 		});

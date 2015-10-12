@@ -10,7 +10,6 @@
  */
 
 // TODO:
-//		1. Why are PHP variables done like the were CSS BEM?
 //		2. Why are CSS classes for loaders not prefixed
 //		3. Prefixing is missing in a lot of places
 
