@@ -15,6 +15,8 @@
  *
  */
 
+// TODO:
+// 		1. ID is the most important attribute so it should be first, then name and dsc then anything else. Correct that.
 
 /**
  *
@@ -28,12 +30,14 @@ function ll_options__admin() {
     // Initialize Titan & options here
     $aa_tf = TitanFramework::getInstance( 'll' );
 
+    // TODO: Why are the arrows not alligned? You do know you can do that by a Sublime package called Allignement? DO THAT! Look I alligned on in this one
     $aa_admin_panel = $aa_tf->createAdminPanel( array(
-		'name' => 'LoadingLogo',
-		'icon' => 'dashicons-dashboard',
+		'name'     => 'LoadingLogo',
+		'icon'     => 'dashicons-dashboard',
 		'position' => '26',
-	) );	
+	) );
 
+    // TODO: Where are comments? No option has any comments
 	$aa_tab__general = $aa_admin_panel->createTab( array(
 	    'name' => 'Settings',
 	) );
@@ -47,6 +51,7 @@ function ll_options__admin() {
 	    'placeholder' => 'Your logo...'
 	) );
 
+	// TODO: should have use better option names than 1,2,3 E.g. 'large' => 'Large'
 	$aa_tab__general->createOption( array(
 	    'name' => 'Logo Size',
 	    'id' => 'll_option__logo__size',
@@ -60,15 +65,6 @@ function ll_options__admin() {
 	    'default' => '2',
 	) );
 
-	$aa_tab__general->createOption( array(
-	    'name' => 'Overlay or Filter',
-	    'id' => 'll_option__overlay_n_filter',
-	    'type' => 'enable',
-	    'enabled' => 'Overlay',
-	    'disabled' => 'Filter',
-	    'default' => true,
-	    'desc' => 'Select the effect to apply to your logo. You can select either an overlay or a filter to apply.',
-	) );
 
 	$aa_tab__general->createOption( array(
 	    'name' => 'Select Animation Direction',
@@ -84,8 +80,20 @@ function ll_options__admin() {
 	    'default' => '1',
 	) );
 
+
 	$aa_tab__general->createOption( array(
-	    'name' => 'Select Filter',
+	    'name' => 'Overlay or Filter',
+	    'id' => 'll_option__overlay_n_filter',
+	    'type' => 'enable',
+	    'enabled' => 'Overlay',
+	    'disabled' => 'Filter',
+	    'default' => true,
+	    'desc' => 'Select the effect to apply to your logo. You can select either an overlay or a filter to apply.',
+	) );
+
+
+	$aa_tab__general->createOption( array(
+	    'name' => 'Select Filter (Optional)',
 	    'id' => 'll_option__filter',
 	    'type' => 'select',
 	    'options' => array(
@@ -96,10 +104,11 @@ function ll_options__admin() {
 	        '5' =>	'Opacity',
 	        '6' =>	'Grayscale'
 	    ),
-	    'desc' => 'Use this option to select the filter to apply to your logo.',
+	    'desc' => 'Use this option to select the filter to apply to your logo. (Works when you select filter in the option above.)',
 	    'default' => '1',
 	) );
 
+	// TODO: Leave two free lines for anything new, e.g. before and after the code for an option. Correct that.
 	$aa_tab__general->createOption( array(
 		'type' => 'save'
 	) );

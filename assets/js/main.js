@@ -11,6 +11,8 @@
 // 	jQuery('#logo').loadgo();
 // });
 
+// TODO: Need documentation on the workflow here, what's going on.
+// I need to address an error, but only if I know what's going on here.
 jQuery(function($) {
 	jQuery(window).load(function($) { // makes sure the whole site is loaded
 		var aa_timer = 0;
