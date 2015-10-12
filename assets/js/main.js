@@ -9,10 +9,11 @@
  * This function runs after the page has been loaded
  */
 jQuery(function($) {
+
+	jQuery('body > *:not(#aa_preloader)').addClass('aa_display--none');
+
 	jQuery(window).load(function($) { 
 
-		jQuery('body > *:not(#aa_preloader)').addClass('aa_display--none');
-		
 		/**
 		 * 
 		 * Following script runs step by step when the site is loaded
@@ -35,8 +36,8 @@ jQuery(function($) {
 
 		}
 
-		jQuery('#aa_preloader').delay(700).fadeOut('slow'); // will fade out the white DIV that covers the website.
-		jQuery('body > *:not(#aa_preloader)').delay(700).removeClass('aa_display--none');
+		jQuery('#aa_preloader').delay(1000).fadeOut('slow'); // will fade out the white DIV that covers the website.
+		jQuery('body > *:not(#aa_preloader)').delay(1000).removeClass('aa_display--none');
 
 	});
 });
