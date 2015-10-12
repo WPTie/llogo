@@ -36,16 +36,6 @@ if ( file_exists( LL_DIR . '/assets/admin/inc/options/ll_options-init.php' ) ) {
 }
 
 /**
- * Image Sizes
- *
- * @since 0.0.1
- *
- */
-if ( file_exists( LL_DIR . '/assets/inc/ll_image_size.php' ) ) {
-    require_once( LL_DIR . '/assets/inc/ll_image_size.php' );
-}
-
-/**
  * Scripts and Styles
  *
  * @since 0.0.1
@@ -53,14 +43,4 @@ if ( file_exists( LL_DIR . '/assets/inc/ll_image_size.php' ) ) {
  */
 if ( file_exists( LL_DIR . '/assets/inc/ll_scripts_styles.php' ) ) {
     require_once( LL_DIR . '/assets/inc/ll_scripts_styles.php' );
-}
-
-/**
- * FrontEnd Options using Titan Framework
- *
- * @since 0.0.1
- *
- */
-if ( file_exists( LL_DIR . '/assets/inc/ll_frontend_options.php' ) ) {
-    require_once( LL_DIR . '/assets/inc/ll_frontend_options.php' );
 }
