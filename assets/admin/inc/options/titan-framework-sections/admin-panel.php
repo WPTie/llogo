@@ -23,18 +23,18 @@
  * tf_create_options is the hook used to create options
  *
  */
-add_action( 'tf_create_options', 'll_options__admin' );
+add_action( 'tf_create_options', 'll_options_admin' );
 
-function ll_options__admin() {
+function ll_options_admin() {
 
     // Initialize Titan & options here
     $aa_tf = TitanFramework::getInstance( 'll' );
 
     // TODO: Why are the arrows not alligned? You do know you can do that by a Sublime package called Allignement? DO THAT! Look I alligned on in this one
     $aa_admin_panel = $aa_tf->createAdminPanel( array(
-		'name'     => 'LoadingLogo',
-		'icon'     => 'dashicons-dashboard',
-		'position' => '26',
+		'name'     		=> 		'LoadingLogo',
+		'icon'     		=> 		'dashicons-dashboard',
+		'position' 		=> 		'26',
 	) );
 
     // TODO: Where are comments? No option has any comments
@@ -44,7 +44,7 @@ function ll_options__admin() {
 
 	$aa_tab__general->createOption( array(
 	    'name' => 'Logo',
-	    'id' => 'll_option__logo',
+	    'id' => 'll_option_logo',
 	    'size' => 'medium',
 	    'type' => 'upload',
 	    'desc' => 'Upload your logo',
@@ -54,7 +54,7 @@ function ll_options__admin() {
 	// TODO: should have use better option names than 1,2,3 E.g. 'large' => 'Large'
 	$aa_tab__general->createOption( array(
 	    'name' => 'Logo Size',
-	    'id' => 'll_option__logo__size',
+	    'id' => 'll_option_logo_size',
 	    'type' => 'select',
 	    'options' => array(
 	        '1' => 'Large',
@@ -68,7 +68,7 @@ function ll_options__admin() {
 
 	$aa_tab__general->createOption( array(
 	    'name' => 'Select Animation Direction',
-	    'id' => 'll_option__direction',
+	    'id' => 'll_option_direction',
 	    'type' => 'select',
 	    'options' => array(
 	        '1' => 'Left to Right',
@@ -83,7 +83,7 @@ function ll_options__admin() {
 
 	$aa_tab__general->createOption( array(
 	    'name' => 'Overlay or Filter',
-	    'id' => 'll_option__overlay_n_filter',
+	    'id' => 'll_option_overlay_n_filter',
 	    'type' => 'enable',
 	    'enabled' => 'Overlay',
 	    'disabled' => 'Filter',
@@ -94,7 +94,7 @@ function ll_options__admin() {
 
 	$aa_tab__general->createOption( array(
 	    'name' => 'Select Filter (Optional)',
-	    'id' => 'll_option__filter',
+	    'id' => 'll_option_filter',
 	    'type' => 'select',
 	    'options' => array(
 	        '1' => 'Sepia',
