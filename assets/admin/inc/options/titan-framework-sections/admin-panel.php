@@ -129,7 +129,6 @@ function ll_options_admin() {
 
 	) );
 
-	// TODO: Leave two free lines for anything new, e.g. before and after the code for an option. Correct that.
 	$aa_tab_general->createOption( array(
 
 		'type' => 'save'
