@@ -15,9 +15,6 @@
  *
  */
 
-// TODO:
-// 		1. ID is the most important attribute so it should be first, then name and dsc then anything else. Correct that.
-
 /**
  *
  * tf_create_options is the hook used to create options
@@ -30,13 +27,12 @@ function ll_options_admin() {
     // Initialize Titan & options here
     $aa_tf = TitanFramework::getInstance( 'll' );
 
-    // TODO: Why are the arrows not alligned? You do know you can do that by a Sublime package called Allignement? DO THAT! Look I alligned on in this one
     $aa_admin_panel = $aa_tf->createAdminPanel( array(
 
 		'name'     		=> 		'LoadingLogo',
 
 		'icon'     		=> 		'dashicons-dashboard',
-		
+
 		'position' 		=> 		'26',
 
 	) );
@@ -61,7 +57,6 @@ function ll_options_admin() {
 
 	) );
 
-	// TODO: should have use better option names than 1,2,3 E.g. 'large' => 'Large'
 	$aa_tab_general->createOption( array(
 
 		'id' 		=> 		'll_option_logo_size',
@@ -71,11 +66,11 @@ function ll_options_admin() {
 	    'desc' 		=> 		'Use this option to select the size of logo.',
 	    
 	    'options' 	=> 		array(
-	        '1' 	=> 		'Large',
-	        '2' 	=> 		'Medium',
-	        '3' 	=> 		'Small',
+	        'large' 	=> 		'Large',
+	        'medium' 	=> 		'Medium',
+	        'small' 	=> 		'Small',
 	    ),
-	    'default' 	=> 		'2',
+	    'default' 	=> 		'medium',
 
 	) );
 
@@ -89,10 +84,10 @@ function ll_options_admin() {
 	    'desc' 		=> 		'Use this option to select the direction of animation.',
 	    
 	    'options' 	=> 		array(
-	        '1' 	=> 		'Left to Right',
-	        '2' 	=> 		'Right to Left',
-	        '3' 	=> 		'Top to Bottom',
-	        '4'		=>		'Bottom to Top',
+	        'left_to_right' 	=> 		'Left to Right',
+	        'right_to_left' 	=> 		'Right to Left',
+	        'top_to_bottom' 	=> 		'Top to Bottom',
+	        'bottom_to_top'		=>		'Bottom to Top',
 	    ),
 	    'default' 	=> 		'1',
 
@@ -123,12 +118,12 @@ function ll_options_admin() {
 	    'desc' 		=> 'Use this option to select the filter to apply to your logo. (Works when you select filter in the option above.)',
 
 	    'options' 	=> array(
-	        '1' 	=> 'Sepia',
-	        '2' 	=> 'Blur',
-	        '3' 	=> 'Invert',
-	        '4'		=>	'Hue Rotate',
-	        '5' 	=>	'Opacity',
-	        '6' 	=>	'Grayscale'
+	        'sepia' 		=> 		'Sepia',
+	        'blur' 			=> 		'Blur',
+	        'invert' 		=> 		'Invert',
+	        'hue_rotate'	=>		'Hue Rotate',
+	        'opacity' 		=>		'Opacity',
+	        'grayscale' 	=>		'Grayscale',
 	    ),
 	    'default' 	=> '1',
 

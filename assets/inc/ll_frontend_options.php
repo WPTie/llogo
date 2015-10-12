@@ -31,15 +31,15 @@ function ll_html_initialize() {
     $ll_logo__size = $aa_tf->getOption( 'll_option_logo_size' );
 
     // TODO: Vertical spacing in if and else. I have added it.
-    if ( $ll_logo__size == 1 ) {
+    if ( $ll_logo__size == 'large' ) {
         $ll_logo__size = 'll_logo_size_large';
     }
 
-    elseif ( $ll_logo__size == 2 ) {
+    elseif ( $ll_logo__size == 'medium' ) {
         $ll_logo__size = 'll_logo_size_medium';
     }
 
-    elseif ( $ll_logo__size == 3 ) {
+    elseif ( $ll_logo__size == 'small' ) {
         $ll_logo__size = 'll_logo_size_small';
     }
 
@@ -88,45 +88,45 @@ function ll_html_initialize() {
 <?php }
 
     if ( $ll_animate__overlayORfilter == 1 ) {
-        if ($ll_animate__direction == 1) {
+        if ($ll_animate__direction == 'left_to_right') {
             wp_register_script( 'll_customJs_direction', LL_URL . '/assets/js/custom/left-to-right.js', array( 'jquery', 'll_loadgoJs', 'll_customJs' ) ); // Left to Right script
             wp_enqueue_script( 'll_customJs_direction' ); // Enqueue it!
 	   }
-        elseif ($ll_animate__direction == 2) {
+        elseif ($ll_animate__direction == 'right_to_left') {
             wp_register_script( 'll_customJs_direction', LL_URL . '/assets/js/custom/right-to-left.js', array( 'jquery', 'll_loadgoJs', 'll_customJs' ) ); // Right to Left script
             wp_enqueue_script( 'll_customJs_direction' ); // Enqueue it!
         }
-        elseif ($ll_animate__direction == 3) {
+        elseif ($ll_animate__direction == 'top_to_bottom') {
             wp_register_script( 'll_customJs_direction', LL_URL . '/assets/js/custom/top-to-bottom.js', array( 'jquery', 'll_loadgoJs', 'll_customJs' ) ); // Top to Bottom script
             wp_enqueue_script( 'll_customJs_direction' ); // Enqueue it!
         }
-        elseif ($ll_animate__direction == 4) {
+        elseif ($ll_animate__direction == 'bottom_to_top') {
             wp_register_script( 'll_customJs_direction', LL_URL . '/assets/js/custom/bottom-to-top.js', array( 'jquery', 'll_loadgoJs', 'll_customJs' ) ); // Bottom to Top script
             wp_enqueue_script( 'll_customJs_direction' ); // Enqueue it!
         }
     }
     else {
-        if ( $ll_animate__filter == 1 ) {
+        if ( $ll_animate__filter == 'sepia' ) {
             wp_register_script( 'll_customJs_filter', LL_URL . '/assets/js/custom/sepia.js', array( 'jquery', 'll_loadgoJs', 'll_customJs' ) ); // Left to Right script
             wp_enqueue_script( 'll_customJs_filter' ); // Enqueue it!
         }
-        elseif ( $ll_animate__filter == 2 ) {
+        elseif ( $ll_animate__filter == 'blur' ) {
             wp_register_script( 'll_customJs_filter', LL_URL . '/assets/js/custom/blur.js', array( 'jquery', 'll_loadgoJs', 'll_customJs' ) ); // Left to Right script
             wp_enqueue_script( 'll_customJs_filter' ); // Enqueue it!
         }
-        elseif ( $ll_animate__filter == 3 ) {
+        elseif ( $ll_animate__filter == 'invert' ) {
             wp_register_script( 'll_customJs_filter', LL_URL . '/assets/js/custom/invert.js', array( 'jquery', 'll_loadgoJs', 'll_customJs' ) ); // Left to Right script
             wp_enqueue_script( 'll_customJs_filter' ); // Enqueue it!
         }
-        elseif ( $ll_animate__filter == 4 ) {
+        elseif ( $ll_animate__filter == 'hue_rotate' ) {
             wp_register_script( 'll_customJs_filter', LL_URL . '/assets/js/custom/hue-rotate.js', array( 'jquery', 'll_loadgoJs', 'll_customJs' ) ); // Left to Right script
             wp_enqueue_script( 'll_customJs_filter' ); // Enqueue it!
         }
-        elseif ( $ll_animate__filter == 5 ) {
+        elseif ( $ll_animate__filter == 'opacity' ) {
             wp_register_script( 'll_customJs_filter', LL_URL . '/assets/js/custom/opacity.js', array( 'jquery', 'll_loadgoJs', 'll_customJs' ) ); // Left to Right script
             wp_enqueue_script( 'll_customJs_filter' ); // Enqueue it!
         }
-        elseif ( $ll_animate__filter == 6 ) {
+        elseif ( $ll_animate__filter == 'grayscale' ) {
             wp_register_script( 'll_customJs_filter', LL_URL . '/assets/js/custom/greyscale.js', array( 'jquery', 'll_loadgoJs', 'll_customJs' ) ); // Left to Right script
             wp_enqueue_script( 'll_customJs_filter' ); // Enqueue it!
         }
