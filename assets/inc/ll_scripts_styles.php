@@ -8,7 +8,6 @@
  * @since 	0.0.1
  */
 
-// TODO: Why JS folder has no vendor and custom folders? They mean something, you have mixed all files, correct that.
 // Abort if called directly
 if ( ! defined( 'WPINC' ) ) { die; }
 
@@ -38,7 +37,7 @@ function ll_scripts_stlyes() {
          */
 
         // TODO: You need to add dependencey array for scripts to be loaded in right order, read at Codex. I have added it as the last arguement
-        wp_register_script( 'll_loadgoJs', LL_URL . '/assets/js/loadgo.min.js', array( 'jquery' ) ); // Custom scripts
+        wp_register_script( 'll_loadgoJs', LL_URL . '/assets/js/vendors/loadgo.min.js', array( 'jquery' ) ); // Custom scripts
         wp_enqueue_script( 'll_loadgoJs' ); // Enqueue it!
 
         // wp_register_script( 'll_loadgoJs__initialize', LL_URL . '/assets/js/initialize.js' ); // Custom scripts

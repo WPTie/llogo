@@ -89,46 +89,46 @@ function ll_html__initialize() {
 
     if ( $ll_animate__overlayORfilter == 1 ) {
         if ($ll_animate__direction == 1) {
-            wp_register_script( 'll_customJs__direction', LL_URL . '/assets/js/left-to-right.js', array( 'jquery', 'll_loadgoJs', 'll_customJs' ) ); // Left to Right script
+            wp_register_script( 'll_customJs__direction', LL_URL . '/assets/js/custom/left-to-right.js', array( 'jquery', 'll_loadgoJs', 'll_customJs' ) ); // Left to Right script
             wp_enqueue_script( 'll_customJs__direction' ); // Enqueue it!
 	   }
         elseif ($ll_animate__direction == 2) {
-            wp_register_script( 'll_customJs__direction', LL_URL . '/assets/js/right-to-left.js', array( 'jquery', 'll_loadgoJs', 'll_customJs' ) ); // Right to Left script
+            wp_register_script( 'll_customJs__direction', LL_URL . '/assets/js/custom/right-to-left.js', array( 'jquery', 'll_loadgoJs', 'll_customJs' ) ); // Right to Left script
             wp_enqueue_script( 'll_customJs__direction' ); // Enqueue it!
         }
         elseif ($ll_animate__direction == 3) {
-            wp_register_script( 'll_customJs__direction', LL_URL . '/assets/js/top-to-bottom.js', array( 'jquery', 'll_loadgoJs', 'll_customJs' ) ); // Top to Bottom script
+            wp_register_script( 'll_customJs__direction', LL_URL . '/assets/js/custom/top-to-bottom.js', array( 'jquery', 'll_loadgoJs', 'll_customJs' ) ); // Top to Bottom script
             wp_enqueue_script( 'll_customJs__direction' ); // Enqueue it!
         }
         elseif ($ll_animate__direction == 4) {
-            wp_register_script( 'll_customJs__direction', LL_URL . '/assets/js/bottom-to-top.js', array( 'jquery', 'll_loadgoJs', 'll_customJs' ) ); // Bottom to Top script
+            wp_register_script( 'll_customJs__direction', LL_URL . '/assets/js/custom/bottom-to-top.js', array( 'jquery', 'll_loadgoJs', 'll_customJs' ) ); // Bottom to Top script
             wp_enqueue_script( 'll_customJs__direction' ); // Enqueue it!
         }
     }
     else {
         if ( $ll_animate__filter == 1 ) {
-            wp_register_script( 'll_customJs__filter', LL_URL . '/assets/js/sepia.js', array( 'jquery', 'll_loadgoJs', 'll_customJs' ) ); // Left to Right script
+            wp_register_script( 'll_customJs__filter', LL_URL . '/assets/js/custom/sepia.js', array( 'jquery', 'll_loadgoJs', 'll_customJs' ) ); // Left to Right script
             // wp_register_script( 'll_customJs__filter', LL_URL . '/assets/js/sepia.js', array( 'jquery', 'll_loadgoJs' ) ); // Left to Right script
             wp_enqueue_script( 'll_customJs__filter' ); // Enqueue it!
         }
         elseif ( $ll_animate__filter == 2 ) {
-            wp_register_script( 'll_customJs__filter', LL_URL . '/assets/js/blur.js', array( 'jquery', 'll_loadgoJs', 'll_customJs' ) ); // Left to Right script
+            wp_register_script( 'll_customJs__filter', LL_URL . '/assets/js/custom/blur.js', array( 'jquery', 'll_loadgoJs', 'll_customJs' ) ); // Left to Right script
             wp_enqueue_script( 'll_customJs__filter' ); // Enqueue it!
         }
         elseif ( $ll_animate__filter == 3 ) {
-            wp_register_script( 'll_customJs__filter', LL_URL . '/assets/js/invert.js', array( 'jquery', 'll_loadgoJs', 'll_customJs' ) ); // Left to Right script
+            wp_register_script( 'll_customJs__filter', LL_URL . '/assets/js/custom/invert.js', array( 'jquery', 'll_loadgoJs', 'll_customJs' ) ); // Left to Right script
             wp_enqueue_script( 'll_customJs__filter' ); // Enqueue it!
         }
         elseif ( $ll_animate__filter == 4 ) {
-            wp_register_script( 'll_customJs__filter', LL_URL . '/assets/js/hue-rotate.js', array( 'jquery', 'll_loadgoJs', 'll_customJs' ) ); // Left to Right script
+            wp_register_script( 'll_customJs__filter', LL_URL . '/assets/js/custom/hue-rotate.js', array( 'jquery', 'll_loadgoJs', 'll_customJs' ) ); // Left to Right script
             wp_enqueue_script( 'll_customJs__filter' ); // Enqueue it!
         }
         elseif ( $ll_animate__filter == 5 ) {
-            wp_register_script( 'll_customJs__filter', LL_URL . '/assets/js/opacity.js', array( 'jquery', 'll_loadgoJs', 'll_customJs' ) ); // Left to Right script
+            wp_register_script( 'll_customJs__filter', LL_URL . '/assets/js/custom/opacity.js', array( 'jquery', 'll_loadgoJs', 'll_customJs' ) ); // Left to Right script
             wp_enqueue_script( 'll_customJs__filter' ); // Enqueue it!
         }
         elseif ( $ll_animate__filter == 6 ) {
-            wp_register_script( 'll_customJs__filter', LL_URL . '/assets/js/greyscale.js', array( 'jquery', 'll_loadgoJs', 'll_customJs' ) ); // Left to Right script
+            wp_register_script( 'll_customJs__filter', LL_URL . '/assets/js/custom/greyscale.js', array( 'jquery', 'll_loadgoJs', 'll_customJs' ) ); // Left to Right script
             wp_enqueue_script( 'll_customJs__filter' ); // Enqueue it!
         }
     }
