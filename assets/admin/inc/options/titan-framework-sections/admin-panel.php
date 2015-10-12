@@ -32,85 +32,113 @@ function ll_options_admin() {
 
     // TODO: Why are the arrows not alligned? You do know you can do that by a Sublime package called Allignement? DO THAT! Look I alligned on in this one
     $aa_admin_panel = $aa_tf->createAdminPanel( array(
+
 		'name'     		=> 		'LoadingLogo',
+
 		'icon'     		=> 		'dashicons-dashboard',
+		
 		'position' 		=> 		'26',
+
 	) );
 
     // TODO: Where are comments? No option has any comments
-	$aa_tab__general = $aa_admin_panel->createTab( array(
+	$aa_tab_general = $aa_admin_panel->createTab( array(
+
 	    'name' => 'Settings',
+
 	) );
 
-	$aa_tab__general->createOption( array(
-	    'name' => 'Logo',
-	    'id' => 'll_option_logo',
-	    'size' => 'medium',
-	    'type' => 'upload',
-	    'desc' => 'Upload your logo',
-	    'placeholder' => 'Your logo...'
+	$aa_tab_general->createOption( array(
+
+		'id' 			=> 	'll_option_logo',
+		'type' 			=> 	'upload',
+
+	    'name' 			=> 	'Logo',
+	    'desc' 			=> 	'Upload your logo',
+	    
+	    'size' 			=> 	'medium',
+	    'placeholder' 	=> 	'Your logo...'
+
 	) );
 
 	// TODO: should have use better option names than 1,2,3 E.g. 'large' => 'Large'
-	$aa_tab__general->createOption( array(
-	    'name' => 'Logo Size',
-	    'id' => 'll_option_logo_size',
-	    'type' => 'select',
-	    'options' => array(
-	        '1' => 'Large',
-	        '2' => 'Medium',
-	        '3' => 'Small',
+	$aa_tab_general->createOption( array(
+
+		'id' 		=> 		'll_option_logo_size',
+	    'type' 		=> 		'select',
+
+	    'name' 		=> 		'Logo Size',
+	    'desc' 		=> 		'Use this option to select the size of logo.',
+	    
+	    'options' 	=> 		array(
+	        '1' 	=> 		'Large',
+	        '2' 	=> 		'Medium',
+	        '3' 	=> 		'Small',
 	    ),
-	    'desc' => 'Use this option to select the size of logo.',
-	    'default' => '2',
+	    'default' 	=> 		'2',
+
 	) );
 
 
-	$aa_tab__general->createOption( array(
-	    'name' => 'Select Animation Direction',
-	    'id' => 'll_option_direction',
-	    'type' => 'select',
-	    'options' => array(
-	        '1' => 'Left to Right',
-	        '2' => 'Right to Left',
-	        '3' => 'Top to Bottom',
-	        '4'	=>	'Bottom to Top',
+	$aa_tab_general->createOption( array(
+
+		'id' 		=> 		'll_option_direction',
+	    'type' 		=> 		'select',
+
+	    'name' 		=> 		'Select Animation Direction',
+	    'desc' 		=> 		'Use this option to select the direction of animation.',
+	    
+	    'options' 	=> 		array(
+	        '1' 	=> 		'Left to Right',
+	        '2' 	=> 		'Right to Left',
+	        '3' 	=> 		'Top to Bottom',
+	        '4'		=>		'Bottom to Top',
 	    ),
-	    'desc' => 'Use this option to select the direction of animation.',
-	    'default' => '1',
+	    'default' 	=> 		'1',
+
 	) );
 
 
-	$aa_tab__general->createOption( array(
-	    'name' => 'Overlay or Filter',
-	    'id' => 'll_option_overlay_n_filter',
-	    'type' => 'enable',
-	    'enabled' => 'Overlay',
-	    'disabled' => 'Filter',
-	    'default' => true,
-	    'desc' => 'Select the effect to apply to your logo. You can select either an overlay or a filter to apply.',
+	$aa_tab_general->createOption( array(
+
+		'id' 		=> 'll_option_overlay_n_filter',
+	    'type' 		=> 'enable',
+
+	    'name' 		=> 'Overlay or Filter',
+	    'desc' 		=> 'Select the effect to apply to your logo. You can select either an overlay or a filter to apply.',
+
+	    'enabled' 	=> 'Overlay',
+	    'disabled' 	=> 'Filter',
+	    'default' 	=> true,
+	    
 	) );
 
 
-	$aa_tab__general->createOption( array(
-	    'name' => 'Select Filter (Optional)',
-	    'id' => 'll_option_filter',
-	    'type' => 'select',
-	    'options' => array(
-	        '1' => 'Sepia',
-	        '2' => 'Blur',
-	        '3' => 'Invert',
-	        '4'	=>	'Hue Rotate',
-	        '5' =>	'Opacity',
-	        '6' =>	'Grayscale'
+	$aa_tab_general->createOption( array(
+
+		'id' 		=> 'll_option_filter',
+	    'type' 		=> 'select',
+
+	    'name' 		=> 'Select Filter (Optional)',
+	    'desc' 		=> 'Use this option to select the filter to apply to your logo. (Works when you select filter in the option above.)',
+
+	    'options' 	=> array(
+	        '1' 	=> 'Sepia',
+	        '2' 	=> 'Blur',
+	        '3' 	=> 'Invert',
+	        '4'		=>	'Hue Rotate',
+	        '5' 	=>	'Opacity',
+	        '6' 	=>	'Grayscale'
 	    ),
-	    'desc' => 'Use this option to select the filter to apply to your logo. (Works when you select filter in the option above.)',
-	    'default' => '1',
+	    'default' 	=> '1',
+
 	) );
 
 	// TODO: Leave two free lines for anything new, e.g. before and after the code for an option. Correct that.
-	$aa_tab__general->createOption( array(
+	$aa_tab_general->createOption( array(
+
 		'type' => 'save'
+
 	) );
 
 }
