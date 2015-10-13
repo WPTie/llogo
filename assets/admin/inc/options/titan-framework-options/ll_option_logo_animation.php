@@ -2,7 +2,7 @@
 /**
  * Option: Animation Check
  *
- * Section: Animation 
+ * Section: Animation
  *
  * @since 0.0.1
  * @package LoadingLogo
@@ -17,19 +17,18 @@ if ( $ll_state ) {
 
     $ll_section_animation->createOption( array(
 
-        'id'            =>  'll_option_animation',
-        'type'          =>  'radio',
+        'id'      =>  'll_option_animation',
+        'type'    =>  'radio',
 
-        'name'          =>  'Animation',
-        'desc'          =>  'Adds selected animation to your logo.',
-        
-        'options'       =>  array(
+        'name'    =>  'Animation',
+        'desc'    =>  'Adds selected animation to your logo.',
 
-            'overlay'        =>  'Overlay',
-            'filter'         =>  'Filter',
-
+        'options' =>  array(
+            'overlay' =>  'Overlay',
+            'filter'  =>  'Filter',
         ),
-        'default'       =>  'overlay',
+        'default'     => 'overlay',
+        'livepreview' => 'value'
 
     ) );
 }

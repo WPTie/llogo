@@ -2,7 +2,7 @@
 /**
  * Option: Filter
  *
- * Section: Animation 
+ * Section: Animation
  *
  * @since 0.0.1
  * @package CFC
@@ -31,9 +31,8 @@ if ( $ll_state ) {
             'opacity'       =>      'Opacity',
             'grayscale'     =>      'Grayscale',
         ),
-        'default'   => 'sepia',
-    
-        // 'css'           =>  '#aa_logo{ width: valuepx; }',
+        'default'     => 'sepia',
+        'livepreview' => ''
 
     ) );
 }

@@ -40,7 +40,7 @@ function ll_customizer_options_animation() {
         'name' => 'Animation',
 
         // Panel
-        'panel' => 'LoadingLogo Customizer',
+        'panel' => 'LoadingLogo',
 
     ) );
 

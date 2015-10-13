@@ -40,7 +40,7 @@ function ll_customizer_options_logo() {
         'name' => 'Logo',
 
         // Panel
-        'panel' => 'LoadingLogo Customizer',
+        'panel' => 'LoadingLogo',
 
     ) );
 

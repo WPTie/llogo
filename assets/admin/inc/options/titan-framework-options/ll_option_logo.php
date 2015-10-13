@@ -2,7 +2,7 @@
 /**
  * Option: Logo Image
  *
- * Section: Logo 
+ * Section: Logo
  *
  * @since 0.0.1
  * @package CFC
@@ -22,12 +22,11 @@ if ( $ll_state ) {
 
         'name'          =>  'Logo',
         'desc'          =>  'Upload your logo',
-        
+
         'size'          =>  'medium',
         'placeholder'   =>  'Your logo...',
-        'livepreview'   =>  '$("#aa_logo").attr("src", value)',
-
-        //'css'         => '#cfc .wpcf7-submit{ width: value; }'
+        // 'livepreview'   =>  '$("#aa_logo").attr("src", value)',
+        // 'css'         => '#cfc .wpcf7-submit{ width: value; }'
 
     ) );
 }

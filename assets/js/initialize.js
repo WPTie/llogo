@@ -1,9 +1,8 @@
-
 /**
- * LoadingLogo
+ * Initialze JS adds HTML
  *
- * This file output the essential html
- * needed for the overlay
+ * This file output the essential html needed for the overlay
+ *
  */
 
 jQuery(function($) {
