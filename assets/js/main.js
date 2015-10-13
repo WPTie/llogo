@@ -22,7 +22,7 @@ jQuery(function($) {
 		 * 	  'setprogress' function has to be called with progress in percentage
 		 * 3. A while loop runs, which provide progress parameter to 'setprogress'
 		 * 	  function
-		 * 4. After the loading animation, #aa_preloader fades out in 700ms and 
+		 * 4. After the loading animation, #aa_preloader fades out in 1700ms and 
 		 *    the rest of the body appears
 		 *    
 		 */
@@ -37,7 +37,10 @@ jQuery(function($) {
 		}
 
 		jQuery('#aa_preloader').delay(1000).fadeOut('slow'); // will fade out the white DIV that covers the website.
-		jQuery('body > *:not(#aa_preloader)').delay(1000).removeClass('aa_display--none');
+		setInterval(function($) {
+			jQuery('body > *:not(#aa_preloader)').removeClass('aa_display--none');
+		}, 1700);
 
 	});
+
 });

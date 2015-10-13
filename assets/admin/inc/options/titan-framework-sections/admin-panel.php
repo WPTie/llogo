@@ -44,38 +44,38 @@ function ll_options_admin() {
 
 	) );
 
-	$aa_tab_general->createOption( array(
+	// $aa_tab_general->createOption( array(
 
-		'id' 			=> 	'll_option_logo',
-		'type' 			=> 	'upload',
+	// 	'id' 			=> 	'll_option_logo',
+	// 	'type' 			=> 	'upload',
 
-	    'name' 			=> 	'Logo',
-	    'desc' 			=> 	'Upload your logo',
+	//     'name' 			=> 	'Logo',
+	//     'desc' 			=> 	'Upload your logo',
 	    
-	    'size' 			=> 	'medium',
-	    'placeholder' 	=> 	'Your logo...'
+	//     'size' 			=> 	'medium',
+	//     'placeholder' 	=> 	'Your logo...'
 
-	) );
+	// ) );
 
-	$aa_tab_general->createOption( array(
+	// $aa_tab_general->createOption( array(
 
-		'id' 		=> 		'll_option_logo_size',
-	    'type' 		=> 		'select',
+	// 	'id' 		=> 		'll_option_logo_size',
+	//     'type' 		=> 		'select',
 
-	    'name' 		=> 		'Logo Size',
-	    'desc' 		=> 		'Use this option to select the size of logo.',
+	//     'name' 		=> 		'Logo Size',
+	//     'desc' 		=> 		'Use this option to select the size of logo.',
 	    
-	    'options' 	=> 		array(
-	        'large' 	=> 		'Large',
-	        'medium' 	=> 		'Medium',
-	        'small' 	=> 		'Small',
-	    ),
-	    'default' 	=> 		'medium',
+	//     'options' 	=> 		array(
+	//         'large' 	=> 		'Large',
+	//         'medium' 	=> 		'Medium',
+	//         'small' 	=> 		'Small',
+	//     ),
+	//     'default' 	=> 		'medium',
 
-	) );
+	// ) );
 
 
-	$aa_tab_general->createOption( array(
+/*	$aa_tab_general->createOption( array(
 
 		'id' 		=> 		'll_option_direction',
 	    'type' 		=> 		'select',
@@ -91,7 +91,7 @@ function ll_options_admin() {
 	    ),
 	    'default' 	=> 		'1',
 
-	) );
+	) );*/
 
 
 	$aa_tab_general->createOption( array(
@@ -109,25 +109,25 @@ function ll_options_admin() {
 	) );
 
 
-	$aa_tab_general->createOption( array(
+	// $aa_tab_general->createOption( array(
 
-		'id' 		=> 'll_option_filter',
-	    'type' 		=> 'select',
+	// 	'id' 		=> 'll_option_filter',
+	//     'type' 		=> 'select',
 
-	    'name' 		=> 'Select Filter (Optional)',
-	    'desc' 		=> 'Use this option to select the filter to apply to your logo. (Works when you select filter in the option above.)',
+	//     'name' 		=> 'Select Filter (Optional)',
+	//     'desc' 		=> 'Use this option to select the filter to apply to your logo. (Works when you select filter in the option above.)',
 
-	    'options' 	=> array(
-	        'sepia' 		=> 		'Sepia',
-	        'blur' 			=> 		'Blur',
-	        'invert' 		=> 		'Invert',
-	        'hue_rotate'	=>		'Hue Rotate',
-	        'opacity' 		=>		'Opacity',
-	        'grayscale' 	=>		'Grayscale',
-	    ),
-	    'default' 	=> '1',
+	//     'options' 	=> array(
+	//         'sepia' 		=> 		'Sepia',
+	//         'blur' 			=> 		'Blur',
+	//         'invert' 		=> 		'Invert',
+	//         'hue_rotate'	=>		'Hue Rotate',
+	//         'opacity' 		=>		'Opacity',
+	//         'grayscale' 	=>		'Grayscale',
+	//     ),
+	//     'default' 	=> '1',
 
-	) );
+	// ) );
 
 	$aa_tab_general->createOption( array(
 

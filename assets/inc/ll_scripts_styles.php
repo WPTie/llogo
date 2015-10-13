@@ -42,8 +42,8 @@ function ll_scripts_stlyes() {
          * needed for the overlay
          * 
          */
-        wp_register_script( 'll_loadgo_html', LL_URL . '/assets/js/initialize.js', array( 'jquery', 'll_loadgoJs' ) ); // Left to Right script
-        wp_enqueue_script( 'll_customJs_direction' ); // Enqueue it!
+        wp_register_script( 'll_loadgo_html', LL_URL . '/assets/js/initialize.js', array( 'jquery', 'll_loadgoJs' ) ); 
+        wp_enqueue_script( 'll_loadgo_html' ); // Enqueue it!
 
         /**
          *  Framework is initialized here
@@ -54,7 +54,7 @@ function ll_scripts_stlyes() {
          * Display Overlay or Filter Option
          * boolean
          */
-        $ll_animate_overlayORfilter = $aa_tf->getOption( 'll_option_overlay_n_filter' );
+        $ll_animate_overlayORfilter = $aa_tf->getOption( 'll_option_animation' );
 
         /**
          * Overlay Animation Direction
@@ -71,30 +71,30 @@ function ll_scripts_stlyes() {
          * overlay or filter
          * 
          */
-        if ( $ll_animate_overlayORfilter == 1 ) {
+        if ( $ll_animate_overlayORfilter == 'overlay' ) {
 
-            if ($ll_animate_direction == 'left_to_right') {
+            if ($ll_animate_direction == 'lr') {
 
                 wp_register_script( 'll_customJs_direction', LL_URL . '/assets/js/custom/left-to-right.js', array( 'jquery', 'll_loadgoJs', 'll_loadgo_html' ) ); // Left to Right script
                 wp_enqueue_script( 'll_customJs_direction' ); // Enqueue it!
 
            }
 
-            elseif ($ll_animate_direction == 'right_to_left') {
+            elseif ($ll_animate_direction == 'rl') {
 
                 wp_register_script( 'll_customJs_direction', LL_URL . '/assets/js/custom/right-to-left.js', array( 'jquery', 'll_loadgoJs', 'll_loadgo_html' ) ); // Right to Left script
                 wp_enqueue_script( 'll_customJs_direction' ); // Enqueue it!
 
             }
 
-            elseif ($ll_animate_direction == 'top_to_bottom') {
+            elseif ($ll_animate_direction == 'tb') {
 
                 wp_register_script( 'll_customJs_direction', LL_URL . '/assets/js/custom/top-to-bottom.js', array( 'jquery', 'll_loadgoJs', 'll_loadgo_html' ) ); // Top to Bottom script
                 wp_enqueue_script( 'll_customJs_direction' ); // Enqueue it!
 
             }
 
-            elseif ($ll_animate_direction == 'bottom_to_top') {
+            elseif ($ll_animate_direction == 'bt') {
 
                 wp_register_script( 'll_customJs_direction', LL_URL . '/assets/js/custom/bottom-to-top.js', array( 'jquery', 'll_loadgoJs', 'll_loadgo_html' ) ); // Bottom to Top script
                 wp_enqueue_script( 'll_customJs_direction' ); // Enqueue it!
@@ -103,7 +103,7 @@ function ll_scripts_stlyes() {
 
         }
 
-        else {
+        elseif ( $ll_animate_overlayORfilter == 'filter' ) {
 
             if ( $ll_animate_filter == 'sepia' ) {
 
@@ -184,6 +184,7 @@ function ll_html_initialize() {
      * Logo/Image Option
      */
     $ll_logo_attachmentID = $aa_tf->getOption( 'll_option_logo' );
+    $ll_logo_attachmentWidth = $aa_tf->getOption( 'll_option_logo_width' );
 
     $ll_logo_src = wp_get_attachment_image_src( $ll_logo_attachmentID, 'medium' );
 
@@ -193,6 +194,7 @@ function ll_html_initialize() {
         <script>
             jQuery(function($) {
                 $('#aa_logo').attr('src', '<?php echo $ll_logo_src; ?>');
+                $('#aa_logo').css({ 'width' : '<?php echo $ll_logo_attachmentWidth; ?>' });
             });
         </script>
 
@@ -202,6 +204,7 @@ function ll_html_initialize() {
         <script>
             jQuery(function($) {
                 $('#aa_logo').attr('src', '<?php echo $ll_logo_src[0]; ?>');
+                $('#aa_logo').css({ 'width' : '<?php echo $ll_logo_attachmentWidth; ?>' });
             });
         </script>
 <?php }
