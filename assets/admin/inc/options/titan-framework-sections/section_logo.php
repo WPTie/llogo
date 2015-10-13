@@ -31,7 +31,7 @@ function ll_customizer_options_logo() {
      * Logo Section & Panel Creation
      *
      * Section: $ll_section_logo
-     * Panel  :  CF7 Customizer
+     * Panel  :  LoadingLogo Customizer
      *
      */
     $ll_section_logo = $aa_tf->createThemeCustomizerSection( array(
