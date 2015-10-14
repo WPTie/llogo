@@ -2,15 +2,15 @@
 /**
  * Plugin Name: LoadingLogo
  * Plugin URI: http://WPTie.com/
- * Description: LoadingLogo adds wrapper to the website while the website is loading.
- * Author: ashar, WPTie
+ * Description: LoadingLogo adds your logo with cool effects while the page loads itself.
+ * Author: mrahmadawais, ashar, WPTie
  * Author URI: http://WPTie.com/
  * Text Domain: loading-logo
  * Version: 0.0.9
  * License: GPL v2+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  *
- * @package LoadingLogo
+ * @package llogo
  *
  */
 
@@ -23,14 +23,14 @@ if ( ! defined( 'WPINC' ) ) {
 /**
  * Define global constants
  *
- * @package LoadingLogo
+ * @package llogo
  * @since 0.0.1
  *
  */
 
 // Plugin version
 if ( ! defined( 'LL_VERSION' ) ) {
-    define( 'LL_VERSION', '0.0.1' );
+    define( 'LL_VERSION', '0.0.9' );
 }
 
 if ( ! defined( 'LL_NAME' ) ) {
@@ -60,35 +60,3 @@ $ll_assets  = LL_URL . '/assets/';
 if ( file_exists( LL_DIR . '/assets/inc/ll.php' ) ) {
     require_once( LL_DIR . '/assets/inc/ll.php' );
 }
-
-
-/**
- * Plugin Activation
- *
- * Add the welcome page transient
- *
- * @since 0.0.1
- * @package LoadingLogo
- *
- */
-// register_activation_hook( __FILE__, 'll_welcome_screen_activate' );
-
-// function ll_welcome_screen_activate() {
-//   set_transient( '_welcome_redirect_ll', true );
-// }
-
-
-/**
- * Plugin Deactivation
- *
- * Delet the welcome page transient
- *
- * @since 0.0.1
- * @package LoadingLogo
- *
- */
-// register_deactivation_hook( __FILE__, 'll_welcome_screen_deactivate' );
-
-// function ll_welcome_screen_deactivate() {
-//   delete_transient( '_welcome_redirect_ll' );
-// }
