@@ -1,4 +1,21 @@
 /**
+ * Custom.js file for custom JS stuff
+ *
+ * Main custom JS file everything that is
+ * 			1. Create HTML for preloader
+ * 			2. Display none everything but the preloader
+ * 			3. Create loadgo timer and let it work through 100%
+ * 			4. Fade the loader
+ * 			5. Remoce display none from everything and add it to loader
+ *
+ * @JSObjects
+ * 			1. ll_logo object with array key imgSrc
+ *
+ * @since 0.0.2
+ * @package ll
+ */
+
+/**
  * Custom JS file
  *
  * This file runs after the page has been loading
@@ -7,8 +24,11 @@
 
 jQuery(function($) {
 
-
+	// Initialize HTML
 	$("body").prepend("<!-- Preloader --><div id='aa_preloader'><div id='aa_cell'><div class='aa_position'><img id='aa_logo' src='' alt='Logo' /></div></div></div><!-- / Preloader -->");
+
+	// Setting the logo image inside the image src via JS object
+    $('#aa_logo').attr('src', ll_logo.imgSrc );
 
 	// TODO: What is this? DOCS? Explain body > *:not
 	// Make everything except the #aa_preloader inside the body to display none
@@ -40,5 +60,6 @@ jQuery(function($) {
 		}, 1700);
 
 	});
+
 
 });
