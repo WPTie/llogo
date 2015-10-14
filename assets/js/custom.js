@@ -7,10 +7,13 @@
 
 jQuery(function($) {
 
+
 	$("body").prepend("<!-- Preloader --><div id='aa_preloader'><div id='aa_cell'><div class='aa_position'><img id='aa_logo' src='' alt='Logo' /></div></div></div><!-- / Preloader -->");
 
 	// TODO: What is this? DOCS? Explain body > *:not
+	// Make everything except the #aa_preloader inside the body to display none
 	jQuery('body > *:not(#aa_preloader)').addClass('aa_display--none');
+
 
 	// TODO: What is this? DOCS? Why load?
 	jQuery(window).load(function($) {
@@ -27,14 +30,14 @@ jQuery(function($) {
 
 		}
 
-		// will fade out the white DIV that covers the website.
-		// After the loading animation, #aa_preloader fades out in 1700ms and the rest of the body appears
+		// will fade out the DIV that covers the website.
 		jQuery('#aa_preloader').delay(1000).fadeOut('slow');
 
 		// // TODO: What is this? DOCS?
-		// setInterval(function($) {
-		// 	jQuery('body > *:not(#aa_preloader)').removeClass('aa_display--none');
-		// }, 1700);
+		// After the loading animation, #aa_preloader fades out in 1700ms and the rest of the body appears
+		setInterval(function($) {
+			jQuery('body > *:not(#aa_preloader)').removeClass('aa_display--none');
+		}, 1700);
 
 	});
 

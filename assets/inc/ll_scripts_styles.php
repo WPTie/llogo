@@ -107,27 +107,27 @@ function ll_scripts_stlyes() {
         elseif ( $ll_animate_overlayORfilter == 'filter' ) {
 
             if ( $ll_animate_filter == 'sepia' ) {
-                wp_enqueue_script( 'll_customJs_filter', LL_URL . '/assets/js/custom/sepia.js', array( 'jquery', 'll_vendorsJS', 'll_customJS' ) ); // Left to Right script
+                wp_enqueue_script( 'll_customJs_filter', LL_URL . '/assets/js/custom/sepia.js', array( 'jquery', 'll_vendorsJS' ) ); // Left to Right script
             }
 
             elseif ( $ll_animate_filter == 'blur' ) {
-                wp_enqueue_script( 'll_customJs_filter', LL_URL . '/assets/js/custom/blur.js', array( 'jquery', 'll_vendorsJS', 'll_customJS' ) ); // Left to Right script
+                wp_enqueue_script( 'll_customJs_filter', LL_URL . '/assets/js/custom/blur.js', array( 'jquery', 'll_vendorsJS' ) ); // Left to Right script
             }
 
             elseif ( $ll_animate_filter == 'invert' ) {
-                wp_enqueue_script( 'll_customJs_filter', LL_URL . '/assets/js/custom/invert.js', array( 'jquery', 'll_vendorsJS', 'll_customJS' ) ); // Left to Right script
+                wp_enqueue_script( 'll_customJs_filter', LL_URL . '/assets/js/custom/invert.js', array( 'jquery', 'll_vendorsJS' ) ); // Left to Right script
             }
 
             elseif ( $ll_animate_filter == 'hue_rotate' ) {
-                wp_enqueue_script( 'll_customJs_filter', LL_URL . '/assets/js/custom/hue-rotate.js', array( 'jquery', 'll_vendorsJS', 'll_customJS' ) ); // Left to Right script
+                wp_enqueue_script( 'll_customJs_filter', LL_URL . '/assets/js/custom/hue-rotate.js', array( 'jquery', 'll_vendorsJS' ) ); // Left to Right script
             }
 
             elseif ( $ll_animate_filter == 'opacity' ) {
-                wp_enqueue_script( 'll_customJs_filter', LL_URL . '/assets/js/custom/opacity.js', array( 'jquery', 'll_vendorsJS', 'll_customJS' ) ); // Left to Right script
+                wp_enqueue_script( 'll_customJs_filter', LL_URL . '/assets/js/custom/opacity.js', array( 'jquery', 'll_vendorsJS' ) ); // Left to Right script
             }
 
             elseif ( $ll_animate_filter == 'grayscale' ) {
-                wp_enqueue_script( 'll_customJs_filter', LL_URL . '/assets/js/custom/greyscale.js', array( 'jquery', 'll_vendorsJS', 'll_customJS' ) ); // Left to Right script
+                wp_enqueue_script( 'll_customJs_filter', LL_URL . '/assets/js/custom/greyscale.js', array( 'jquery', 'll_vendorsJS' ) ); // Left to Right script
             }
         }
 

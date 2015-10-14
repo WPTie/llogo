@@ -19,6 +19,7 @@ if ( ! defined( 'WPINC' ) ) {
     die;
 }
 
+
 /**
  * Define global constants
  *
