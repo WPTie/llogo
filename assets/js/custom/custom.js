@@ -35,7 +35,7 @@ jQuery(function($) {
 	jQuery('body > *:not(#aa_preloader)').addClass('aa_display--none');
 
 
-	// TODO: What is this? DOCS? Why load?
+	// TODO: Doc ready not working, make it work.
 	jQuery(window).load(function($) {
 
 		// 1. aa_timer variable is set to zero
