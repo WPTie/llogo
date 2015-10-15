@@ -68,7 +68,7 @@ function ll_scripts_stlyes() {
             'll_customJS',
             LL_URL . '/assets/js/custom/custom.js',
             array( 'jquery', 'll_vendorsJS' )
-        ); // costom.js
+        ); // custom.js
 
         // For ll_customJS create a JS object called ll_logo and give it an
         // attribute called imgSrc accessable via ll_logo.imgSrc in the JS file

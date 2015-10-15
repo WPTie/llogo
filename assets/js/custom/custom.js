@@ -39,7 +39,7 @@ jQuery(function($) {
 	 */
 	// Make everything except the #aa_preloader inside the body to display none
 	jQuery('body > *:not(#aa_preloader)').addClass('aa_display--none');
-
+	
 
 	/**
 	 * As soon as the window is loaded, the logo animation
@@ -51,10 +51,10 @@ jQuery(function($) {
 
 		// 1. aa_timer variable is set to zero
 		var aa_timer = 0;
-
+		
 		// 2. For loadgo plugin to run the animation setprogress' function has to be called with progress in percentage
 		// 3. A while loop runs, which provide progress parameter to 'setprogress' function
-		while( aa_timer < 100 ) {
+		while( aa_timer <= 100 ) {
 
 			jQuery('#aa_logo').loadgo('setprogress', aa_timer);
 			aa_timer++;
@@ -77,6 +77,5 @@ jQuery(function($) {
 		}, 1700);
 
 	});
-
-
+	
 });
