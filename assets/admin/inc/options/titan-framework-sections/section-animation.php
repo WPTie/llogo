@@ -30,8 +30,8 @@ function ll_customizer_options_animation() {
     /**
      * Animation Section & Panel Creation
      *
-     * Section: $ll_section_logo
-     * Panel  :  CF7 Customizer
+     * Section: $ll_section_animation
+     * Panel  :  LoadingLogo
      *
      */
     $ll_section_animation = $aa_tf->createThemeCustomizerSection( array(
@@ -40,7 +40,7 @@ function ll_customizer_options_animation() {
         'name' => 'Animation',
 
         // Panel
-        'panel' => 'LoadingLogo',
+        'panel' => 'LoadingLogo'
 
     ) );
 

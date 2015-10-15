@@ -10,6 +10,17 @@
  */
 
 /**
+ * Welcome Page
+ *
+ * @since 0.0.1
+ *
+ */
+if ( file_exists( LL_DIR . '/assets/admin/inc/welcome/welcome.php' ) ) {
+    require_once( LL_DIR . '/assets/admin/inc/welcome/welcome.php' );
+}
+
+
+/**
  * Titan Framework
  *
  * Adds TF for creating options

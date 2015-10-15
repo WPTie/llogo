@@ -60,3 +60,34 @@ $ll_assets  = LL_URL . '/assets/';
 if ( file_exists( LL_DIR . '/assets/inc/ll.php' ) ) {
     require_once( LL_DIR . '/assets/inc/ll.php' );
 }
+
+/**
+ * Plugin Activation
+ *
+ * Add the welcome page transient
+ *
+ * @since 0.0.1
+ * @package llogo
+ *
+ */
+register_activation_hook( __FILE__, 'll_welcome_screen_activate' );
+
+function ll_welcome_screen_activate() {
+  set_transient( '_welcome_redirect_ll', true );
+}
+
+
+/**
+ * Plugin Deactivation
+ *
+ * Delete the welcome page transient
+ *
+ * @since 0.0.1
+ * @package llogo
+ *
+ */
+register_deactivation_hook( __FILE__, 'll_welcome_screen_deactivate' );
+
+function ll_welcome_screen_deactivate() {
+  delete_transient( '_welcome_redirect_ll' );
+}

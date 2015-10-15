@@ -30,12 +30,23 @@ jQuery(function($) {
 	// Setting the logo image inside the image src via JS object
     $('#aa_logo').attr('src', ll_logo.imgSrc );
 
-	// TODO: What is this? DOCS? Explain body > *:not
+	/**
+	 * 'body > *:not(#aa_preloader)' selects all the immediate
+	 * elements rendering after the body tag. After that a class
+	 * naming 'aa_display--none' is added to it.
+	 *
+	 * 
+	 */
 	// Make everything except the #aa_preloader inside the body to display none
 	jQuery('body > *:not(#aa_preloader)').addClass('aa_display--none');
 
 
-	// TODO: What is this? DOCS? Why load?
+	/**
+	 * As soon as the window is loaded, the logo animation
+	 * timer starts running.
+	 *
+	 * 
+	 */
 	jQuery(window).load(function($) {
 
 		// 1. aa_timer variable is set to zero
@@ -53,7 +64,13 @@ jQuery(function($) {
 		// will fade out the DIV that covers the website.
 		jQuery('#aa_preloader').delay(1000).fadeOut('slow');
 
-		// // TODO: What is this? DOCS?
+		/**
+		 * The following code makes the rest of the tags in the
+		 * body tag to wait for the animation to complete and then
+		 * its 'aa_display--none' class is removed.
+		 *
+		 * 
+		 */
 		// After the loading animation, #aa_preloader fades out in 1700ms and the rest of the body appears
 		setInterval(function($) {
 			jQuery('body > *:not(#aa_preloader)').removeClass('aa_display--none');

@@ -27,7 +27,7 @@ if ( $ll_state ) {
         'min'     => '10',
         'max'     => '100',
 
-        'css'     => '#aa_logo{ width: value0px; width: valuevw; }',
+        'css'     => '#aa_logo{ width: value0px; width: valuevw; }'
 
     ) );
 }

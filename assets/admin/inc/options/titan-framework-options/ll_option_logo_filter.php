@@ -29,7 +29,7 @@ if ( $ll_state ) {
             'invert'        =>      'Invert',
             'hue_rotate'    =>      'Hue Rotate',
             'opacity'       =>      'Opacity',
-            'grayscale'     =>      'Grayscale',
+            'grayscale'     =>      'Grayscale'
         ),
         'default'     => 'sepia',
         'livepreview' => ''

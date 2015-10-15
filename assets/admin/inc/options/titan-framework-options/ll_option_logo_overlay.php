@@ -27,10 +27,10 @@ if ( $ll_state ) {
             'lr' => 'Left to Right',
             'rl' => 'Right to Left',
             'tb' => 'Top to Bottom',
-            'bt' => 'Bottom to Top',
+            'bt' => 'Bottom to Top'
         ),
 
-        'default'     => 'lr',
+        'default'     => 'lr'
 
     ) );
 }

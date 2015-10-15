@@ -24,7 +24,7 @@ function ll_scripts_stlyes() {
          * Scripts
          *
          *     @vendor   loadgo.min.js
-         *     @custom   custom.js, etc. TODO: list all custom js here.
+         *     @custom   custom.js, filter.js, overlay.js
          *
          * @since 0.0.1
          *
@@ -98,7 +98,7 @@ function ll_scripts_stlyes() {
         if ( $ll_animate_overlayORfilter == 'overlay' ) {
 
 
-            // Custom.js: This file performs the animation effects during page loading
+            // overlay.js: This file customizes the overlay
             wp_register_script(
                 'll_overlayJS',
                 LL_URL . '/assets/js/custom/overlay.js',
@@ -115,7 +115,7 @@ function ll_scripts_stlyes() {
 
         elseif ( $ll_animate_overlayORfilter == 'filter' ) {
 
-            // Custom.js: This file performs the animation effects during page loading
+            // filter.js: This file customizes the filters for the logo
             wp_register_script(
                 'll_filterJS',
                 LL_URL . '/assets/js/custom/filter.js',

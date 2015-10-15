@@ -24,9 +24,7 @@ if ( $ll_state ) {
         'desc'          =>  'Upload your logo',
 
         'size'          =>  'medium',
-        'placeholder'   =>  'Your logo...',
-        // 'livepreview'   =>  '$("#aa_logo").attr("src", value)',
-        // 'css'         => '#cfc .wpcf7-submit{ width: value; }'
+        'placeholder'   =>  'Your logo...'
 
     ) );
 }

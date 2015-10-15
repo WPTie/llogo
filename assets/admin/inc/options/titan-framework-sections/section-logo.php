@@ -31,7 +31,7 @@ function ll_customizer_options_logo() {
      * Logo Section & Panel Creation
      *
      * Section: $ll_section_logo
-     * Panel  :  LoadingLogo Customizer
+     * Panel  :  LoadingLogo
      *
      */
     $ll_section_logo = $aa_tf->createThemeCustomizerSection( array(
@@ -40,7 +40,7 @@ function ll_customizer_options_logo() {
         'name' => 'Logo',
 
         // Panel
-        'panel' => 'LoadingLogo',
+        'panel' => 'LoadingLogo'
 
     ) );
 

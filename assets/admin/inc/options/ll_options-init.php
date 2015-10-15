@@ -5,7 +5,7 @@
  * This file includes all the sections of customizer options
  *
  * @since 0.0.1
- * @package CFC
+ * @package llogo
  *
  */
 
@@ -21,8 +21,8 @@
  *
  */
 
-if ( file_exists( LL_DIR . '/assets/admin/inc/options/titan-framework-sections/section_logo.php' ) ) {
-    require_once( LL_DIR . '/assets/admin/inc/options/titan-framework-sections/section_logo.php' );
+if ( file_exists( LL_DIR . '/assets/admin/inc/options/titan-framework-sections/section-logo.php' ) ) {
+    require_once( LL_DIR . '/assets/admin/inc/options/titan-framework-sections/section-logo.php' );
 }
 
 /**
@@ -35,6 +35,6 @@ if ( file_exists( LL_DIR . '/assets/admin/inc/options/titan-framework-sections/s
  * @since 0.0.1
  *
  */
-if ( file_exists( LL_DIR . '/assets/admin/inc/options/titan-framework-sections/section_animation.php' ) ) {
-    require_once( LL_DIR . '/assets/admin/inc/options/titan-framework-sections/section_animation.php' );
+if ( file_exists( LL_DIR . '/assets/admin/inc/options/titan-framework-sections/section-animation.php' ) ) {
+    require_once( LL_DIR . '/assets/admin/inc/options/titan-framework-sections/section-animation.php' );
 }
