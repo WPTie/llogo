@@ -158,10 +158,10 @@ $ll_version = LL_VERSION;
 					<!--End mc_embed_signup-->
 
 				</div>
-				<!-- /.cfc_subscribe__second -->
+				<!-- /.ll_subscribe__second -->
 
 			</div>
-			<!-- /.cfc_subscribe -->
+			<!-- /.ll_subscribe -->
 
 		 </div>
 
